@@ -195,5 +195,15 @@
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    		<script>
+          // Redirects user from 404
+          (function () {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+              history.replaceState(null, null, redirect);
+            }
+          })();
+        </script>
   <link rel="modulepreload" href="chunk-IARRKS4L.js"><link rel="modulepreload" href="chunk-V5DQALWN.js"><script src="polyfills-V6NSZBVE.js" type="module"></script><script src="main-MDYUJPK7.js" type="module"></script></body>
 </html>
