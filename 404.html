@@ -5,10 +5,10 @@
     <title>anderson-gregorio-totvs.github.io</title>
     <script>
       sessionStorage.redirect = location.href;
-      const location = window.location;
+      const l = window.location;
       const folder = "/" + location.pathname.split("/")[1];
 
-      location.replace(location.protocol + "//" + location.hostname + folder);
+      l.replace(l.protocol + "//" + l.hostname + folder);
     </script>
   </head>
 </html>
